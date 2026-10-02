@@ -6,14 +6,66 @@ body {
 }
 h1 {
     color: #00a800; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-size: 50px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color_1 3s infinite;
 }
 
-p{
-    color:coral;
+p {
+    color: #005ca8; /* El color de la cabecera */
+    font-size: 24px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color_2 3s infinite;
 }
-li{
-    color:blue;
-    font-family:Tahoma;
+
+li {
+    color: #00a800; /* El color de la cabecera */
+    font-size: 15px; /* El tamaño de la fuente de la cabecera */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color_3 3s infinite;
+}
+h2 {
+    color: #815b2e; /* El color de la cabecera */
+    font-size: 20px; /* El tamaño de la fuente de la cabecera */
+    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color_0 3s infinite;
+}
+
+button {
+    background-color:#805b17
+}
+
+button:hover {
+    animation: color_4 3s infinite;
+}
+
+@keyframes color_0 {
+  0%   { color: rgb(108, 139, 23); }
+  50%  { color: rgb(116, 114, 23); }
+  100% { color: rgb(173, 171, 34); }
+}
+
+
+@keyframes color_1 {
+  0%   { color: rgb(29, 57, 182); }
+  50%  { color: rgb(27, 49, 109); }
+  100% { color: rgb(19, 20, 68); }
+}
+
+@keyframes color_2 {
+  0%   { color: rgb(108, 139, 23); }
+  50%  { color: rgb(116, 114, 23); }
+  100% { color: rgb(173, 171, 34); }
+}
+
+@keyframes color_3 {
+  0%   { color: rgb(156, 204, 25); }
+  50%  { color: rgb(115, 124, 29); }
+  100% { color: rgb(36, 41, 16); }
+}
+
+@keyframes color_4 {
+  0%   { color: rgb(167, 146, 29); }
+  50%  { color: rgb(113, 122, 31); }
+  100% { color: rgb(117, 112, 35); }
 }
