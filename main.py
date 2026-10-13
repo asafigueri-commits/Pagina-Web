@@ -33,10 +33,34 @@ def random_fact():
 
 
 
+CARACTERES = "+-*/!&$#?=@abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+
+@app.route("/secret/<int:longitud>")
+def secret_page(longitud):
+    contrasena_generada = ""
+
+   
+    for i in range(longitud):
+        contrasena_generada += random.choice(CARACTERES)
+
+   
+    return (
+        f"<h1>🕵️‍♂️ ¡Bienvenido a la página secreta!</h1>"
+        f"<h3>🔑 Generador de Contraseñas Activo</h3>"
+        f" 4px;'>{contrasena_generada}</code></p>"
+        f"<br><a href='/'>← Volver al inicio</a>"
+    )
+
+
+
+
+
+
+
+
 @app.route("/<nombre>")
 def saludar(nombre):
     return f'<h1>Hola, {nombre}!,eres bienvenido a esta pagina web</h1>'
-
 
 
 app.run(debug=True)
